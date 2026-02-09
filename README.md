@@ -1,4 +1,3 @@
-
 # 卡片生成器
 
 一个功能强大、易于使用的卡片生成工具，支持自定义封面、内容、样式和布局，可用于制作各种类型的知识卡片、宣传卡片等。
@@ -8,7 +7,7 @@
 ### 🎨 丰富的视觉定制
 - **多种配色方案**：内置多种预设配色方案，包括Pastel、Classic Blue、晨露花园、薰衣草田和信纸样式
 - **自定义背景**：支持上传自定义背景图片，可调整透明度
-- **字体选择**：提供多种中文字体，包括悠哉字体、霞鹜文楷、得意黑、思源黑体等
+- **字体选择**：支持多种中文字体，包括悠哉字体、霞鹜文楷、得意黑、思源黑体等（需手动下载）
 - **图层管理**：支持图层的显示/隐藏、拖拽排序，方便管理卡片元素
 
 ### ✏️ 强大的编辑功能
@@ -36,8 +35,48 @@
 1. **下载项目**
    下载项目文件并解压
 
-2. **直接打开**
+2. **下载字体**
+   请参考「字体下载与安装」章节，下载并安装所需字体
+
+3. **直接打开**
    双击 `index.html` 文件，在浏览器中打开
+
+## 字体下载与安装
+
+由于字体文件较大，无法直接上传到GitHub，您需要手动下载并安装所需字体。
+
+### 推荐字体
+
+1. **悠哉字体**
+   - 下载地址：[https://www.maoken.com/freefonts/18043.html](https://www.maoken.com/freefonts/18043.html)
+   - 文件名：悠哉字体-常规.ttf, 悠哉字体-细体.ttf
+
+2. **霞鹜文楷**
+   - 下载地址：[https://github.com/lxgw/LxgwWenKai/releases](https://github.com/lxgw/LxgwWenKai/releases)
+   - 文件名：LXGWWenKai-Regular.ttf, LXGWWenKai-Light.ttf
+
+3. **得意黑**
+   - 下载地址：[https://github.com/atelier-anchor/smiley-sans/releases](https://github.com/atelier-anchor/smiley-sans/releases)
+   - 文件名：SmileySans-Oblique.otf
+
+4. **思源黑体**
+   - 下载地址：[https://github.com/adobe-fonts/source-han-sans/releases](https://github.com/adobe-fonts/source-han-sans/releases)
+   - 文件名：SourceHanSansSC-Regular.otf, SourceHanSansSC-Bold.otf, SourceHanSansSC-Light.otf
+
+5. **小赖字体**
+   - 下载地址：[https://www.maoken.com/freefonts/13044.html](https://www.maoken.com/freefonts/13044.html)
+   - 文件名：小赖字体.ttf
+
+### 安装方法
+
+1. **创建fonts目录**
+   在项目根目录下创建一个名为 `fonts` 的目录
+
+2. **复制字体文件**
+   将下载的字体文件复制到 `fonts` 目录中
+
+3. **验证安装**
+   打开应用后，在字体选择下拉菜单中应该能看到已安装的字体
 
 ## 如何使用
 
@@ -73,16 +112,7 @@
 
 ```
 card-generator/
-├── fonts/              # 字体文件
-│   ├── LXGWWenKai-Light.ttf
-│   ├── LXGWWenKai-Regular.ttf
-│   ├── SmileySans-Oblique.otf
-│   ├── SourceHanSansSC-Bold.otf
-│   ├── SourceHanSansSC-Light.otf
-│   ├── SourceHanSansSC-Regular.otf
-│   ├── 小赖字体.ttf
-│   ├── 悠哉字体-常规.ttf
-│   └── 悠哉字体-细体.ttf
+├── fonts/              # 字体文件（需手动创建并添加字体）
 ├── js/                 # 第三方库
 │   ├── FileSaver.min.js
 │   ├── html2canvas.min.js
@@ -96,6 +126,8 @@ card-generator/
 ├── server.py           # 本地服务器
 └── styles.css          # 样式文件
 ```
+
+> **注意**：fonts目录需要手动创建，并添加下载的字体文件。详见「字体下载与安装」章节。
 
 ## 技术栈
 
